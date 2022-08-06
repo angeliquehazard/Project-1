@@ -1,34 +1,281 @@
+body {
+    background-image: url(https://i.imgur.com/HE76cCf.jpg?1);
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+}
+
 h1 {
     text-align: center;
     font-size: 60px;
-}
+    color: yellow;
+    width: 100vw;
+    font-family: "Press Start 2P";
 
-#deal {
-    display: flex;
-    flex-direction: row;
+}
+/* figure out how to center button with time and score on either side */
+
+#time-deal-score {
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     height: 50px;
-    width: 100px;
-    margin: auto;
+    width: 100vw;
     font-size: 20px;
+    font-family: "Press Start 2p";
+    background-color: yellow;
 }
+#time {
+    align-items: flex-start;
+    font-size: 30px;
+}
+#deal {
+    align-items: center;
+    height: 40px;
+    width: 100px;
+    border-radius: 15%;
+    border: 5px solid red;
+    background-color: blue;
+    color: red;
+}
+#score {
+    font-size: 30px;
+}
+/* find a way to move apart button and game board */
 #game-board {
     display: grid;
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 500px;
+    width: 100vh;
     height: 100vh;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-}   
+    gap: 15px;
+}  
+ /*is there a way to combine all the boxes into one statement?  */
 #box1 {
     grid-column: 1;
-    grid-row: 1;;
+    grid-row: 1;
     height: 100%;
     width: 100%;
     background-color: blue;
-    
-   
-}   
+    border : 5px solid red;
+    border-radius: 25%;
+}
+#box2 {
+    grid-column: 2;
+    grid-row: 1;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+}
+#box3 {
+    grid-column: 3;
+    grid-row: 1;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+}
+#box4 {
+    grid-column: 4;
+    grid-row: 1;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+}
+#box5 {
+    grid-column: 5;
+    grid-row: 1;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+}
+#box6 {
+    grid-column: 1;
+    grid-row: 2;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+}
+#box7 {
+    grid-column: 2;
+    grid-row: 2;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+}
+#box8 {
+    grid-column: 3;
+    grid-row: 2;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+}
+#box9 {
+    grid-column: 4;
+    grid-row: 2;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+}
+#box10 {
+    grid-column: 5;
+    grid-row: 2;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+}
+#box11 {
+    grid-column: 1;
+    grid-row: 3;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+}
+#box12 {
+    grid-column: 2;
+    grid-row: 3;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+}
+#box13 {
+    grid-column: 3;
+    grid-row: 3;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+}
+#box14 {
+    grid-column: 4;
+    grid-row: 3;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+}
+#box15 {
+    grid-column: 5;
+    grid-row: 3;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+}
+#box16 {
+    grid-column: 1;
+    grid-row: 4;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+}
+#box17 {
+    grid-column: 2;
+    grid-row: 4;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+}
+#box18 {
+    grid-column: 3;
+    grid-row: 4;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+}
+#box19 {
+    grid-column: 4;
+    grid-row: 4;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+}
+#box20 {
+    grid-column: 5;
+    grid-row: 4;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+} 
+#box21 {
+    grid-column: 1;
+    grid-row: 5;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+} 
+#box22 {
+    grid-column: 2;
+    grid-row: 5;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+} 
+#box23 {
+    grid-column: 3;
+    grid-row: 5;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+} 
+#box24 {
+    grid-column: 4;
+    grid-row: 5;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+} 
+#box25 {
+    grid-column: 5;
+    grid-row: 5;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    border : 5px solid red;
+    border-radius: 25%;
+}    
