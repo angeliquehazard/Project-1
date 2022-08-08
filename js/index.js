@@ -7,12 +7,13 @@ let cardImages = {
     clyde: "https://i.imgur.com/G2QCU6j.png",
     pinky: "https://i.imgur.com/7Ylz5eT.png",
     strawberry: "https://i.imgur.com/5QswQ6r.png"
-}
+};
 
 let box = document.getElementsByClassName("box");
     //this is an array of all the box divs
 let score = 0;
 let timer = 0;
+
 
 // for timer (on first click)
 // if (click === -1) {
@@ -39,12 +40,18 @@ let timer = 0;
     // add event listener for box
     
     function image() {
-        // for (let i=0; i<=box.length; i++) {
-            style.box = cardImages.cherries;
+            box.style = cardImages.cherries;
          }; 
-    box[0].addEventListener("click", function(image) {
-      });      
+    box[0].addEventListener("click", function() {
+        image();
+    }); 
+      
+    // image.addEventListener('click', function(){
+    //     changeImage();
+    // });
 
+    // function changeImage(){
+    //     image.src = './squid-dab2.gif';
 
         // consider (mdn): 
         // function hide(evt) {
