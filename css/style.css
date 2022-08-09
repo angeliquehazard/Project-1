@@ -58,9 +58,9 @@ h1 {
     gap: 20px;
 }  
 
-/* .hidden {
+.hidden {
     display: none !important;
-} */
+}
  /*is there a way to combine all the boxes into one statement?  */
 /* how do i get the photo to stretch to the full box? */
  #box1 {

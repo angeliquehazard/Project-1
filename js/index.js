@@ -28,12 +28,20 @@ let start = document.getElementById("deal");
 let boxes = document.getElementsByClassName("box");
 for (let i = 0; i < boxes.length; i++) {
     let rand = Math.floor(Math.random() * (cardImages.length - 1));
-            //need to correct to only have two of each image
-            boxes[i].innerHTML = "<img src='" + cardImages[rand] + "' alt='image' class='hidden' width=100% height=100%>"
+            boxes[i].innerHTML = "<img src='" + cardImages[rand] + "' alt='image' width=100% height=100%>"
             boxes[i].style.width = "8rem"
             boxes[i].style.height = "8rem"
-        cardImages.splice(rand, 1)
+        cardImages.splice(rand, 1);
+        // setTimeout(clearBoxes(), 3000);
+        // function clearBoxes() {
+        //     boxes[i].classList.add("hidden");
+        // }
 }
+console.log(boxes);
+// boxes.forEach(function(boxes) {
+//     boxes.classList.add("hidden");
+// });
+//enter a certain length of time for mismatched cards to show
 
 
 // for timer (on first click)
