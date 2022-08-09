@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "name": "https://github.com/angeliquehazard/Project-1/blob/169d3727d46ff3b0803a6b8b7fbd711352845e67/js/index.js#L42",
+            "request": "launch",
+            "url": "https://github.com/angeliquehazard/Project-1/blob/169d3727d46ff3b0803a6b8b7fbd711352845e67/js/index.js#L42"
+        }
+    ]
+}
