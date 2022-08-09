@@ -57,6 +57,10 @@ h1 {
     grid-template-rows: repeat(4, 1fr);
     gap: 20px;
 }  
+
+/* .hidden {
+    display: none !important;
+} */
  /*is there a way to combine all the boxes into one statement?  */
 /* how do i get the photo to stretch to the full box? */
  #box1 {
