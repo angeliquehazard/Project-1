@@ -18,30 +18,83 @@ let cardImages = [
 ];
 
 
-
-
     //returns an array of all boxes with class "box"
 let score = 0;
 let timer = 0;
 let start = document.getElementById("deal");
+let choice1 = null;
+let choice2 = null;
 
+
+//Kenneth's suggestion
+// const box1 = document.getElementById('box1');
+// box1.addEventListener('click', function() {
+//     box1.children[0].classList.remove('hidden')
+//     choice1 = box1.children[0].currentSrc;
+// });
+
+// const box2 = document.getElementById('box2');
+// box2.addEventListener('click', function() {
+//     box2.children[0].classList.remove('hidden')
+//     choice2 = box2.children[0].currentSrc;
+// });
+// const box3 = document.getElementById('box3')
+// box3.addEventListener('click', function() {
+//     box3.children[0].classList.remove('hidden')
+//     choice3 = box3.children[0].currentSrc;
+// })
+
+
+// for this, figure out how to just get one pair of images per board
 let boxes = document.getElementsByClassName("box");
 for (let i = 0; i < boxes.length; i++) {
     let rand = Math.floor(Math.random() * (cardImages.length - 1));
-            boxes[i].innerHTML = "<img src='" + cardImages[rand] + "' alt='image' width=100% height=100%>"
-            boxes[i].style.width = "8rem"
-            boxes[i].style.height = "8rem"
-        cardImages.splice(rand, 1);
-        // setTimeout(clearBoxes(), 3000);
-        // function clearBoxes() {
-        //     boxes[i].classList.add("hidden");
-        // }
-}
-console.log(boxes);
-// boxes.forEach(function(boxes) {
-//     boxes.classList.add("hidden");
-// });
-//enter a certain length of time for mismatched cards to show
+            boxes[i].innerHTML = "<img src='" + cardImages[rand] + " 'alt='image' class='hidden' width=100% height=100%>";
+            boxes[i].style.width = "8rem";
+            boxes[i].style.height = "8rem";
+            boxes[i].addEventListener("click", function () {
+                boxes[i].children[0].classList.remove('hidden')
+        cardImages.splice(rand, 1)
+                choice1 = boxes[i].innerHTML;
+                choice2 = boxes[i].innerHTML;
+                if (choice1 !== choice2) {
+                    for (let box of boxes) {
+                        setTimeout( () => {
+                            box.children[0].classList.add('hidden');
+                        }, 1000)
+                    };
+                }
+            }
+        
+        )};
+
+//TURN LOGIC
+//click 1
+    //turn over card one
+
+//click 2
+    //turn over card 2
+   
+//if card 1 and card 2 match
+    //keep them both turned over
+    //increase score
+
+// card 1 and card 2 don't match, turn both back over after 1 second
+
+    for (let box of boxes) {
+            setTimeout( () => {
+                box.children[0].classList.add('hidden');
+            }, 1000)
+        };
+  
+ 
+// this shows all the boxes on refresh, then they disappear after 2 seconds - set this if choice1 and choice2 don't match
+     //and just set it to disappear the last two choices
+// for (let box of boxes) {
+//     setTimeout( () => {
+//         box.children[0].classList.add('hidden');
+//     }, 2000)
+// };
 
 
 // for timer (on first click)
@@ -84,7 +137,6 @@ console.log(boxes);
 
 //handle turn
 
-    // add event listener for EACH box to change image
     // if images are random, how do i show the image that's on the box?
  
  
