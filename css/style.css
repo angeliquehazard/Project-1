@@ -38,14 +38,14 @@ h1 {
     border-radius: 15px;
     border: 5px solid black;
     background-color: rgb(17,88,250);
-    color: rgb(234,43,46);
+    color: black;
     font-family: "Press Start 2p";
 }
 #score {
     font-size: 30px;
     margin: auto;
 }
-/* find a way to move apart button and game board */
+
 #game-board {
     display: grid;
     justify-content: center;
@@ -55,14 +55,13 @@ h1 {
     height: 100vh;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 20px;
+    gap: 10px;
 }  
 
 .hidden {
     display: none !important;
 }
  /*is there a way to combine all the boxes into one statement?  */
-/* how do i get the photo to stretch to the full box? */
  #box1 {
     grid-column: 1;
     grid-row: 1;
@@ -70,8 +69,6 @@ h1 {
     width: 100%;
     background-color: rgb(17,88,250);
     border : 5px solid rgb(222,202,75);
-    border-radius: 25%;
-
 }
 #box2 {
     grid-column: 2;
@@ -80,7 +77,7 @@ h1 {
     width: 100%;
     background-color: blue;
     border : 5px solid rgb(234,43,46);
-    border-radius: 25%;
+    
 }
 #box3 {
     grid-column: 3;
@@ -89,7 +86,7 @@ h1 {
     width: 100%;
     background-color: blue;
     border : 5px solid red;
-    border-radius: 25%;
+    
 }
 #box4 {
     grid-column: 4;
@@ -98,7 +95,7 @@ h1 {
     width: 100%;
     background-color: blue;
     border : 5px solid red;
-    border-radius: 25%;
+    
 }
 #box5 {
     grid-column: 1;
@@ -107,7 +104,7 @@ h1 {
     width: 100%;
     background-color: blue;
     border : 5px solid red;
-    border-radius: 25%;
+    
 }
 #box6 {
     grid-column: 2;
@@ -116,7 +113,7 @@ h1 {
     width: 100%;
     background-color: blue;
     border : 5px solid red;
-    border-radius: 25%;
+    
 }
 #box7 {
     grid-column: 3;
@@ -125,7 +122,7 @@ h1 {
     width: 100%;
     background-color: blue;
     border : 5px solid red;
-    border-radius: 25%;
+    
 }
 #box8 {
     grid-column: 4;
@@ -134,7 +131,7 @@ h1 {
     width: 100%;
     background-color: blue;
     border : 5px solid red;
-    border-radius: 25%;
+    
 }
 #box9 {
     grid-column: 1;
@@ -143,7 +140,7 @@ h1 {
     width: 100%;
     background-color: blue;
     border : 5px solid red;
-    border-radius: 25%;
+    
 }
 #box10 {
     grid-column: 2;
@@ -152,7 +149,7 @@ h1 {
     width: 100%;
     background-color: blue;
     border : 5px solid red;
-    border-radius: 25%;
+    
 }
 #box11 {
     grid-column: 3;
@@ -161,7 +158,7 @@ h1 {
     width: 100%;
     background-color: blue;
     border : 5px solid red;
-    border-radius: 25%;
+    
 }
 #box12 {
     grid-column: 4;
@@ -170,7 +167,7 @@ h1 {
     width: 100%;
     background-color: blue;
     border : 5px solid red;
-    border-radius: 25%;
+    
 }
 #box13 {
     grid-column: 1;
@@ -179,7 +176,7 @@ h1 {
     width: 100%;
     background-color: blue;
     border : 5px solid red;
-    border-radius: 25%;
+    
 }
 #box14 {
     grid-column: 2;
@@ -188,7 +185,7 @@ h1 {
     width: 100%;
     background-color: blue;
     border : 5px solid red;
-    border-radius: 25%;
+    
 }
 #box15 {
     grid-column: 3;
@@ -197,7 +194,7 @@ h1 {
     width: 100%;
     background-color: blue;
     border : 5px solid red;
-    border-radius: 25%;
+    
 }
 #box16 {
     grid-column: 4;
@@ -206,5 +203,5 @@ h1 {
     width: 100%;
     background-color: blue;
     border : 5px solid red;
-    border-radius: 25%;
+    
 }
