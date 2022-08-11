@@ -7,15 +7,14 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 60px;
+    font-size: 100px;
     color: rgb(222,202,75);
     width: 100vw;
     font-family: "Press Start 2P";
 
 }
-/* figure out how to center button with time and score on either side */
 
-#time-deal-score {
+/* #time-deal-score {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -24,13 +23,13 @@ h1 {
     font-size: 20px;
     font-family: "Press Start 2p";
     background-color: rgb(222,202,75);
-}
-#time {
+} */
+/* #time {
     align-items: flex-start;
     margin: auto;
     font-size: 30px;
-}
-#deal {
+} */
+/* #deal {
     align-items: center;
     margin: auto;
     height: 40px;
@@ -40,11 +39,11 @@ h1 {
     background-color: rgb(17,88,250);
     color: black;
     font-family: "Press Start 2p";
-}
-#score {
+} */
+/* #score {
     font-size: 30px;
     margin: auto;
-}
+} */
 
 #game-board {
     display: grid;
@@ -68,7 +67,7 @@ h1 {
     height: 100%;
     width: 100%;
     background-color: rgb(17,88,250);
-    border : 5px solid rgb(222,202,75);
+    border : 5px solid rgb(234,43,46);
 }
 #box2 {
     grid-column: 2;
@@ -204,4 +203,25 @@ h1 {
     background-color: blue;
     border : 5px solid red;
     
+}
+#winbox {
+    color: black;
+    background-color: rgb(222,202,75);
+    text-align: center;
+    font-family: "Press Start 2P";
+    height: 300px;
+    font-size: 100px;
+    padding-top: 10px;
+}
+#play-again {
+    height: 60px;
+    background-color: rgb(234,43,46);
+    color: black;
+    font-family: "Press Start 2P";
+    align-items: center;
+    font-size: 30px;
+    justify-content: center;
+    border-radius: 15px;
+    border: 10px solid rgb(17,88,250);
+    margin-top: 20px;
 }
