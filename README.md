@@ -5,15 +5,17 @@
 ## Technologies used
 #### HTML, CSS, JavaScript, Flex, Grid 
 ## Screenshot
+[screenshot]: ../Images/screenshot.png
 ## Live link
 ## Approach Taken
+#### I began with the basic HTML and CSS elements, so that when I started my JavaScript code, I would be able to test it more easily.  Before starting the JavaScript, I tried to break up the logic into the smallest pieces possible and use pseudocode to outline them all.  As I progressed, I had to break up problems into even smaller pieces when I came upon an obstacle.
 ## Wireframes
 #### https://whimsical.com/project-1-URu4xLoBjdbwW6YepEqhNx
 ## Project Structure
 ## What went well
 #### The HTML and CSS aspects of the project came much more easily to me than the JavaScript aspect.
 ## Hurdles
-#### I had a difficult time figuring out the logic for the gameplay to enter into JavaScript.  Also, I spent a lot of time tracking down and fixing syntax errors.
+#### The first day I worked on the JavaScript, I spent hours trying to figure out why my images weren't loading onto the board.  Turns out, I had downloaded the wrong type of picture files (transparent png), and they had been loading all along, I just couldn't see them. I had a difficult time figuring out the logic for the gameplay to enter into JavaScript.  Also, I spent a lot of time tracking down and fixing syntax errors.
 ## Future features
 #### Expanded board, timer, score
 ## Any other resources used
