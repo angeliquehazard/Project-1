@@ -5,8 +5,7 @@
 ## Technologies used
 #### HTML, CSS, JavaScript, Flex, Grid 
 ## Screenshot
-![alt text][screenshot]
-[screenshot]:https://github.com/angeliquehazard/Project-1/blob/main/images/screenshot.png
+[screenshot]: https://github.com/angeliquehazard/Project-1/blob/main/images/screenshot.png
 ## Live link
 #### https://flashback-angelique-hazard.netlify.app/
 ## Approach Taken
