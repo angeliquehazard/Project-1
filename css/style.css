@@ -4,47 +4,13 @@ body {
     width: 100vw;
     margin: 0px;
 }
-
 h1 {
     text-align: center;
     font-size: 100px;
     color: rgb(222,202,75);
     width: 100vw;
     font-family: "Press Start 2P";
-
 }
-
-/* #time-deal-score {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 100vw;
-    font-size: 20px;
-    font-family: "Press Start 2p";
-    background-color: rgb(222,202,75);
-} */
-/* #time {
-    align-items: flex-start;
-    margin: auto;
-    font-size: 30px;
-} */
-/* #deal {
-    align-items: center;
-    margin: auto;
-    height: 40px;
-    width: 150px;
-    border-radius: 15px;
-    border: 5px solid black;
-    background-color: rgb(17,88,250);
-    color: black;
-    font-family: "Press Start 2p";
-} */
-/* #score {
-    font-size: 30px;
-    margin: auto;
-} */
-
 #game-board {
     display: grid;
     justify-content: center;
@@ -55,156 +21,140 @@ h1 {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
-}  
-
+}
 .hidden {
     display: none !important;
 }
- /*is there a way to combine all the boxes into one statement?  */
- #box1 {
+#box1 {
     grid-column: 1;
     grid-row: 1;
     height: 100%;
     width: 100%;
     background-color: rgb(17,88,250);
-    border : 5px solid rgb(234,43,46);
+    border : 5px solid red;
 }
 #box2 {
     grid-column: 2;
     grid-row: 1;
     height: 100%;
     width: 100%;
-    background-color: blue;
-    border : 5px solid rgb(234,43,46);
-    
+    background-color: rgb(17,88,250);
+    border : 5px solid red;
 }
 #box3 {
     grid-column: 3;
     grid-row: 1;
     height: 100%;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(17,88,250);
     border : 5px solid red;
-    
 }
 #box4 {
     grid-column: 4;
     grid-row: 1;
     height: 100%;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(17,88,250);
     border : 5px solid red;
-    
 }
 #box5 {
     grid-column: 1;
     grid-row: 2;
     height: 100%;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(17,88,250);
     border : 5px solid red;
-    
 }
 #box6 {
     grid-column: 2;
     grid-row: 2;
     height: 100%;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(17,88,250);
     border : 5px solid red;
-    
 }
 #box7 {
     grid-column: 3;
     grid-row: 2;
     height: 100%;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(17,88,250);
     border : 5px solid red;
-    
 }
 #box8 {
     grid-column: 4;
     grid-row: 2;
     height: 100%;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(17,88,250);
     border : 5px solid red;
-    
 }
 #box9 {
     grid-column: 1;
     grid-row: 3;
     height: 100%;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(17,88,250);
     border : 5px solid red;
-    
 }
 #box10 {
     grid-column: 2;
     grid-row: 3;
     height: 100%;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(17,88,250);
     border : 5px solid red;
-    
 }
 #box11 {
     grid-column: 3;
     grid-row: 3;
     height: 100%;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(17,88,250);
     border : 5px solid red;
-    
 }
 #box12 {
     grid-column: 4;
     grid-row: 3;
     height: 100%;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(17,88,250);
     border : 5px solid red;
-    
 }
 #box13 {
     grid-column: 1;
     grid-row: 4;
     height: 100%;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(17,88,250);
     border : 5px solid red;
-    
 }
 #box14 {
     grid-column: 2;
     grid-row: 4;
     height: 100%;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(17,88,250);
     border : 5px solid red;
-    
 }
 #box15 {
     grid-column: 3;
     grid-row: 4;
     height: 100%;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(17,88,250);
     border : 5px solid red;
-    
 }
 #box16 {
     grid-column: 4;
     grid-row: 4;
     height: 100%;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(17,88,250);
     border : 5px solid red;
-    
 }
 #winbox {
+    position:fixed;
     color: black;
     background-color: rgb(222,202,75);
     text-align: center;
@@ -212,16 +162,18 @@ h1 {
     height: 300px;
     font-size: 100px;
     padding-top: 10px;
+    margin-left: 25%;
+    border: 10px solid black;
 }
 #play-again {
     height: 60px;
-    background-color: rgb(234,43,46);
-    color: black;
+    background-color: black;
+    color: white;
     font-family: "Press Start 2P";
     align-items: center;
-    font-size: 30px;
+    font-size: 25px;
     justify-content: center;
     border-radius: 15px;
-    border: 10px solid rgb(17,88,250);
+    border: 10px dotted white;
     margin-top: 20px;
 }

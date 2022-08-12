@@ -19,7 +19,6 @@ let cardImages = [
 
 let score = 0;
 let timer = 0;
-let start = document.getElementById("deal");
 let checkMatch = [];
 let indexState = [];
 let winCounter = [];
@@ -36,15 +35,14 @@ for (let i = 0; i < boxes.length; i++) {
     boxes[i].style.height = "10rem";
     boxes[i].addEventListener("click", function () {
         if (checkMatch.length === 0) {
-            boxes[i].children[0].classList.remove('hidden');
+            boxes[i].children[0].classList.remove("hidden");
             checkMatch.push(boxes[i].children[0].currentSrc);
             indexState[0] = i;
             return null;
         }
         if (checkMatch.length !== 0 && boxes[i].children[0].currentSrc === checkMatch[0]) {
-            boxes[i].children[0].classList.remove('hidden')
+            boxes[i].children[0].classList.remove("hidden")
             checkMatch.push(boxes[i].children[0].currentSrc);
-            // document.getElementById("score").innerHTML = ("Score " + 10);
             checkMatch = [];
             winCounter.push(boxes[i].children[0].currentSrc);
             console.log(winCounter);
@@ -52,11 +50,11 @@ for (let i = 0; i < boxes.length; i++) {
             return null;
 
         } else if (checkMatch !== 0 && boxes[i].children[0].currentSrc !== checkMatch[0]) {
-            boxes[i].children[0].classList.remove('hidden')
+            boxes[i].children[0].classList.remove("hidden")
             checkMatch.push(boxes[i].children[0].currentSrc);
             setTimeout(() => {
-                boxes[indexState[0]].children[0].classList.add('hidden');
-                boxes[i].children[0].classList.add('hidden');
+                boxes[indexState[0]].children[0].classList.add("hidden");
+                boxes[i].children[0].classList.add("hidden");
             }, 1000);
             checkMatch = []
             return null;
